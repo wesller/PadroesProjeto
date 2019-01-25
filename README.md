@@ -5,6 +5,8 @@ Resolvi disponibilizar o material que utilizei para revisar meu aprendizado sobr
 
 Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipedia
 
+Cada padrão esta implementado em um pacote e a execução de todos esta na classe Prin
+
 >## 1 - Facade
 > - **Motivação**
 >> - Estruturar um sistema em subsistemas ajuda a reduzir sua complexidade. A dependência existente entre os subsistemas pode ser minimizada através do uso de um objeto Façade, que fornece uma interface única e uniforme para as diversas funcionalidades de um subsistema. 
@@ -27,7 +29,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> - 
+>> - Criação
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Singleton
 
@@ -38,7 +40,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> - 
+>> - Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Mediator
 
@@ -49,7 +51,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Iterador
 
@@ -60,7 +62,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Strategy
 
@@ -71,7 +73,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Command
 
@@ -82,7 +84,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Criação
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Builder
 
@@ -93,7 +95,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/State
 
@@ -104,7 +106,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Template_Method
 
@@ -115,7 +117,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Criação
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Factory_Method
 
@@ -126,7 +128,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Memento_(inform%C3%A1tica)
 
@@ -137,7 +139,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Criação
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Prototype
 
@@ -148,7 +150,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Estrutural
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Proxy_(padr%C3%B5es_de_projeto)
 
@@ -159,7 +161,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Estrutural
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Decorator
 
@@ -170,7 +172,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Estrutural
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Adapter
 
@@ -181,7 +183,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Estrutural
 > - **Fonte**
 >> - https://pt.wikipedia.org/w/index.php?title=Bridge_(padr%C3%A3o_de_projeto_Estrutural)&action=edit&redlink=1
 
@@ -192,7 +194,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Observer
 
@@ -203,7 +205,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -
+>> -  Estrutural
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Composite
 
@@ -214,7 +216,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Interpreter
 
@@ -225,7 +227,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Chain_of_Responsibility
 
@@ -236,7 +238,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Criação
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Abstract_Factory
 
@@ -247,7 +249,7 @@ Os exemplos são criados por mim, mas o conteúdo teórico foi copiado da wikipe
 > - **Conseqüências / Forças**
 >> - 
 > - **Categoria**
->> -  
+>> -  Comportamental
 > - **Fonte**
 >> - https://pt.wikipedia.org/wiki/Visitor_pattern
 
