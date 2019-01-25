@@ -8,7 +8,6 @@ public class SopaLegumesFacade {
 	private List<Ingredientes> ingredientes = new LinkedList<Ingredientes>();
 	
 	public SopaLegumesFacade() {
-		System.out.println("Padrao de projeto Facade");
 		ingredientes.add(new Batata());
 		ingredientes.add(new Repolho());
 		ingredientes.add(new Cenoura());

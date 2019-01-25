@@ -1,4 +1,4 @@
-# PadroesProjeto
+# Padrões de Projeto
 
 
 Resolvi disponibilizar o material que utilizei para revisar meu aprendizado sobre padrões de projeto, espero que a minha visão sobre o assunto possa ser util a todos que precisam aprender ou relembrar o assunto.
@@ -13,7 +13,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 >>
 >> - Quando existir um sistema complexo, na qual o cliente não precisa entender todo o sistema, o Façade possibilita um uso simplificado do sistema, apenas um subconjunto dele, ou utilizá-lo de uma maneira particular. Dispomos então de um sistema complicado, do qual precisamos utilizar somente uma parte, para um sistema simplificado, customizado para nossas necessidades.
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - Torna o sistema mais fácil de se usar, protegendo os clientes dos componentes do sistema, reduzindo o número de objetos que terão que lidar.
 >> - Promove fraco acoplamento entre os subsistemas e seus clientes.
 >> - Não evita que as aplicações possam acessar as subclasses diretamente, pode-se escolher entre a facilidade de uso ou a generalidade.
@@ -24,10 +24,16 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 
 >## 2 - Singleton
 > - **Motivação**
->> - 
+>> - Quando você necessita de somente uma instância da classe, por exemplo, a conexão com banco de dados, vamos supor que você terá que chamar diversas vezes a conexão com o banco de dados em um código na mesma execução, se você instanciar toda vez a classe de banco, haverá grande perda de desempenho, assim usando o padrão singleton, é garantida que nesta execução será instânciada a classe somente uma vez. Lembrando que este pattern é considerado por muitos desenvolvedores um antipattern, então, cuidado onde for utilizá-lo.
 > 
-> - **Conseqüências / Forças**
->> - 
+> - **Forças / Fraquezas**
+>> - Permite o controle sobre como e quando os clientes acessam a instância.
+>> - Várias classes singleton podem obedecer uma mesma interface, permitindo assim que um singleton em particular seja escolhido para trabalhar com uma determinada aplicação em tempo de execução.
+>> - Com apenas uma implementação interna do singleton pode-se fazer com que o singleton crie um número controlado de instâncias.
+>> - É mais flexível que métodos estáticos por permitir o polimorfismo.
+>> - Acoplamento: Usando Singleton você estará acoplando o seu código em uma implementação estática e específica. >> - Isso faz o seu código dependente dessa classe e impede, por exemplo, criar mocks em testes unitários.
+>> - Escopo: Se você por alguma razão decidir que para determinado componente da aplicação você precisa de outra implementação terá que alterar manualmente todas as classes.
+>> - Falsa segurança: No java, por exemplo, não existe uma classe apenas por JVM. O conceito de carregamento de classes em java é feito por ClassLoader.
 > - **Categoria**
 >> - Criação
 > - **Fonte**
@@ -37,7 +43,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> - Comportamental
@@ -48,7 +54,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -59,7 +65,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -70,7 +76,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -81,7 +87,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Criação
@@ -92,7 +98,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -103,7 +109,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -114,7 +120,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Criação
@@ -125,7 +131,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -136,7 +142,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Criação
@@ -147,7 +153,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Estrutural
@@ -158,7 +164,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Estrutural
@@ -169,7 +175,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Estrutural
@@ -180,7 +186,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Estrutural
@@ -191,7 +197,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -202,7 +208,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Estrutural
@@ -213,7 +219,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -224,7 +230,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
@@ -235,7 +241,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Criação
@@ -246,7 +252,7 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 > - **Motivação**
 >> - 
 > 
-> - **Conseqüências / Forças**
+> - **Forças / Fraquezas**
 >> - 
 > - **Categoria**
 >> -  Comportamental
