@@ -7,6 +7,9 @@ import com.wesller.mediator.ChatMediator;
 import com.wesller.mediator.ChatMediatorImpl;
 import com.wesller.mediator.Usuario;
 import com.wesller.mediator.UsuarioImpl;
+import com.wesller.mediator.iterator.Fruta;
+import com.wesller.mediator.iterator.Iterator;
+import com.wesller.mediator.iterator.IteratorImpl;
 import com.wesller.singleton.SolSingleton;
 
 public class Principal {
@@ -23,6 +26,8 @@ public class Principal {
 		}
 		printLine();
 		mediator();
+		printLine();
+		iterator();
 		printLine();
 		System.out.println("Concluido");
 	}
@@ -62,7 +67,21 @@ public class Principal {
 		mediator.adicionarUsuario(juberlita);
 		mediator.adicionarUsuario(serafina);
 		joao.send("Ola a todos");
+	}
+	
+	private static void iterator() {
+		System.out.println(">>> Iterator <<<");
+		Fruta[] frutas = new Fruta[4];
+		frutas[0] = new Fruta("Abacaxi");
+		frutas[1] = new Fruta("Maça");
+		frutas[2] = new Fruta("Melancia");
+		frutas[3] = new Fruta("Abacate");
 		
+		Iterator iterator = new IteratorImpl(frutas);
+		while (iterator.hasNext()) {
+			Fruta fruta = (Fruta)iterator.next();
+			System.out.println(fruta.nome);	
+		}
 	}
 	
 	private static void printLine() {

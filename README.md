@@ -56,10 +56,14 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 
 >## 4 - Iterator
 > - **Motivação**
->> - 
+>> - Um iterador externo pode ser imaginado como um tipo de ponteiro que possui duas operações primárias: referenciar um elemento particular na coleção de objetos (chamado elemento de acesso) e modificar a si mesmo para apontar para o próximo elemento (chamado elemento de travessia). Também deve existir uma maneira de criar um iterador para apontar para algum primeiro elemento bem como alguma maneira de determinar quando o iterador esgotou todos os elementos no container. Dependendo da linguagem e do uso pretendido, iteradores podem também fornecer operações adicionais ou exibir comportamentos diferentes.
+>> - O propósito primário de um iterador é permitir que um usuário processe cada elemento de um container enquanto isola o usuário da estrutura interna de um container. Isto permite que o container armazene elementos da maneira que ele desejar permitindo que o usuário trate-o como se ele fosse uma simples lista ou sequencia. Uma classe iterador normalmente é projetada em estreita coordenação com a classe container correspondente. Normalmente, o container fornece os métodos para criação de iteradores.
+>> - Observe que um contador de loop algumas vezes é referenciado como um iterador de loop. Um contador de loop, entretanto, apenas fornece a funcionalidade de travessia e não a funcionalidade de acesso ao elemento.
 > 
 > - **Forças / Fraquezas**
->> - 
+>> - Suporta variações no percurso
+>> - Iteradores simplificam a interface do objeto a ser iterado
+>> - Pode haver mais de percurso sendo percorrido ao mesmo tempo (concorrência)
 > - **Categoria**
 >> -  Comportamental
 > - **Fonte**
