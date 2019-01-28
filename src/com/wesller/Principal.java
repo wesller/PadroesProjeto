@@ -3,6 +3,10 @@ package com.wesller;
 import java.util.Arrays;
 
 import com.wesller.facade.SopaLegumesFacade;
+import com.wesller.mediator.ChatMediator;
+import com.wesller.mediator.ChatMediatorImpl;
+import com.wesller.mediator.Usuario;
+import com.wesller.mediator.UsuarioImpl;
 import com.wesller.singleton.SolSingleton;
 
 public class Principal {
@@ -17,6 +21,8 @@ public class Principal {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		printLine();
+		mediator();
 		printLine();
 		System.out.println("Concluido");
 	}
@@ -42,6 +48,21 @@ public class Principal {
 		}
 		System.out.println("Singleton executado com sucesso");
 		System.out.println();
+	}
+	
+	private static void mediator() {
+		System.out.println(">>> Mediator <<<");
+		ChatMediator mediator = new ChatMediatorImpl();
+		Usuario joao = new UsuarioImpl(mediator, "Joao");
+		Usuario pedro = new UsuarioImpl(mediator, "Pedro");
+		Usuario juberlita = new UsuarioImpl(mediator, "Juberlita");
+		Usuario serafina = new UsuarioImpl(mediator, "Serafina");
+		mediator.adicionarUsuario(joao);
+		mediator.adicionarUsuario(pedro);
+		mediator.adicionarUsuario(juberlita);
+		mediator.adicionarUsuario(serafina);
+		joao.send("Ola a todos");
+		
 	}
 	
 	private static void printLine() {

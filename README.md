@@ -42,10 +42,13 @@ Cada padrão esta implementado em um pacote e a execução de todos esta na clas
 
 >## 3 - Mediator
 > - **Motivação**
->> - 
+>> - É um padrão de projeto usado frequentemente quando deseja-se encapsular como os objetos interagem, ou seja, a comunicação entre os objetos é estabelecida através do Mediator. Este padrão é considerado um padrão comportamental, pois o padrão pode alterar o comportamento da aplicação (programa).O Mediator promove o fraco acoplamento ao evitar que objetos se referiram uns aos outros explicitamente.
 > 
 > - **Forças / Fraquezas**
->> - 
+>> - Diminuí consideravelmente o acoplamento (entre os Colegas) e consequentemente aumenta o reuso.
+>> - Ocorre a eliminação de relacionamentos muitos para muitos (N para N)
+>> - A política de comunicações fica centralizada no Mediator, logo, podemos alterar essa política sem precisar alterar os Colegas.
+>> - Em termos práticos a tendência do padrão Mediator é tornar-se complexo.A troca de complexidade, inicialmente na interação e, após a aplicação do padrão, a complexidade passa a ficar no Mediator o que dificulta a manutenção.
 > - **Categoria**
 >> - Comportamental
 > - **Fonte**
